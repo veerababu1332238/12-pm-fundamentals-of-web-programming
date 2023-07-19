@@ -1,0 +1,12 @@
+Html: html stands for hypertext markup language
+html is used to create static webpages
+It is a tag based language where th ui content is represented using tags
+A tag is a keyword that is enclosed in  angular brackets
+html is a collection of tags that provides an implementation of static webpages
+
+
+
+how does aweb browser reads html and display it on ui?
+the web browser takes the help of DOM and convert the html to ui.
+
+
