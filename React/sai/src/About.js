@@ -1,0 +1,21 @@
+function About(){
+    return (
+    <div className="container border">
+      <h1 className="text-center text-white">About us</h1>
+      <div className="row">
+        
+         <p className=" text-justify text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Ac feugiat sed lectus vestibulum mattis ullamcorper. Lorem donec massa sapien faucibus et molestie ac feugiat. Libero volutpat sed cras ornare arcu dui vivamus. Urna condimentum mattis pellentesque id nibh tortor. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Est ultricies integer quis auctor elit sed vulputate mi. Velit scelerisque in dictum non. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Semper auctor neque vitae tempus quam pellentesque nec. Elementum tempus egestas sed sed. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Ornare lectus sit amet est placerat in egestas.
+
+Laoreet suspendisse interdum consectetur libero id faucibus nisl. Ut tortor pretium viverra suspendisse potenti. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Aliquam sem et tortor consequat id porta nibh venenatis. Sapien nec sagittis aliquam malesuada. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Bibendum neque egestas congue quisque egestas diam. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Enim tortor at auctor urna nunc id cursus metus. Dictumst quisque sagittis purus sit. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Pellentesque pulvinar pellentesque habitant morbi tristique. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Enim blandit volutpat maecenas volutpat blandit aliquam. Nibh nisl condimentum id venenatis. Id donec ultrices tincidunt arcu non. Vitae semper quis lectus nulla. Blandit cursus risus at ultrices mi tempus.
+
+Tincidunt lobortis feugiat vivamus at augue eget arcu. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Fusce ut placerat orci nulla. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Sit amet mattis vulputate enim nulla aliquet porttitor. Aliquet eget sit amet tellus cras adipiscing enim. Lectus nulla at volutpat diam ut venenatis tellus in metus. Mauris augue neque gravida in fermentum. Fames ac turpis egestas maecenas pharetra convallis. Viverra justo nec ultrices dui sapien. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Ac auctor augue mauris augue neque gravida in fermentum. Aenean pharetra magna ac placerat vestibulum.
+
+Id volutpat lacus laoreet non curabitur gravida arcu ac. Eu consequat ac felis donec et odio pellentesque diam. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Non nisi est sit amet. Amet venenatis urna cursus eget nunc scelerisque viverra. At tellus at urna condimentum mattis pellentesque id nibh tortor. Dignissim convallis aenean et tortor at risus. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Dui vivamus arcu felis bibendum ut tristique et egestas. Velit sed ullamcorper morbi tincidunt. Etiam non quam lacus suspendisse faucibus interdum. Sem fringilla ut morbi tincidunt augue interdum velit euismod in.
+
+Dictum non consectetur a erat nam at lectus urna duis. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Venenatis tellus in metus vulputate eu scelerisque felis. Eu volutpat odio facilisis mauris sit amet. Elementum facilisis leo vel fringilla. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. At elementum eu facilisis sed odio morbi quis commodo odio. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Facilisis sed odio morbi quis commodo odio aenean sed. Erat pellentesque adipiscing commodo elit at. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est.</p>
+
+      </div>
+    </div> 
+    )
+ }
+ export default About;

@@ -16,13 +16,28 @@ body{
         <div class="hi">
         <h1>Login</h1>
         <section >
-            <form action="./s.html" method="post">
-            <input type="text" placeholder="username" maxlength="15" required id="text"><br><br>
-            <input type="password" minlength="8" placeholder="password" required><br><br>
-            <button onclick="login()">login</button>
-            </form>
+            
+            <input type="text" placeholder="username" maxlength="15" required id="username"><br><br>
+            <input type="password" minlength="8" placeholder="password" required  id="password"><br><br>
+           <button onclick="login()">login</button>
+            
         </section>
         </div>
+        <script>
+           function login() {
+       var username = document.getElementById("username").value;
+       var password = document.getElementById("password").value;
+        if(username=="Saikumar" && password == "Sai@123") {
+            window.open("./s.html");
+        }
+        else{
+            alert("invalid username or password");
+        }
+
+            }
+            login();
+        </script>
+
    
     </body>
 </html>

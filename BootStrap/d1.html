@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #banner {
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            padding: 30px;
+        }
+        #content, #image-container {
+            flex: 4;
+        }
+        #content h1{
+            font-size: 50px;
+        }
+        #content li{
+            font-size: 25px;
+            line-height: 30px;
+        }
+        #content button{
+            border-radius: 8px;
+            padding: 10px 20px;
+            background-color: aqua;
+            color: #ffff;
+            border: none;
+        }
+        
+            
+        @media screen and (max-width: 600px) {
+  #banner {
+   flex-direction: column;
+  }
+  #content {
+    order: 2;
+  }
+ #image-container{
+    order: 1;
+ }
+}
+            
+        
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div id="content">
+            <h1>India’s #1 Training Institute</h1>
+            <ul>
+                <li>50,000 Trained and Got Better Jobs</li>
+                <li>First Ever Hybrid Institute with Classroom & Online</li>
+                <li>Real time projects, Interviews and Job Support</li>
+
+                <button >Contact course Advisor</button>
+                <button  onclick="courses()">View Courses</button>
+            </ul>
+
+        </div>
+        <div id="image-container">
+            <img src="https://www.digital-lync.com/images/training-course-mid.webp" alt="image" />
+
+        </div>
+    </div>
+    <script>
+        function courses(){
+            window.open("./tables.html");
+
+        }
+        courses();
+    </script>
+    
+</body>
+</html>

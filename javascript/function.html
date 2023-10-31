@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b ){
+            console.log(a+b);
+
+        }
+        sum(10,20);
+        function f2(s,d){
+            console.log(s,d);
+        }
+
+        f2();
+
+        //anonymus function
+        function f1(x){
+          x();
+          console.log("hello");
+        }
+        f1(function (){
+            console.log('annonymus function called');
+        })
+        var arr = [10,20,30];
+        arr.forEach(function(value){
+            console.log(value);
+        })
+        //function expression
+        let mul = function(a, b){
+                console.log(a*b);
+        }
+        mul(10,20);
+
+    </script>
+</body>
+</html>

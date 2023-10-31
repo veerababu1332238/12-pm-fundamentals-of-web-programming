@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" placeholder="enter email or mobile" id="username"><br><br>
+        <input type="password" placeholder="password" id="password"><br><br>
+        <button onclick="login()">Login</button>
+
+
+    <script>
+        function login(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+          if((username == "sai" || username == 123456) && password == "digi" ) {
+            alert("sucess");
+
+          }else{
+            alert("failed");
+          }
+        }
+        login();
+    </script>
+    </body>
+</html>

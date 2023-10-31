@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10;//global variable
+        function variable(){
+            let b = 30;//local variable
+            console.log(a);  //global variable can be accessed from anywhere
+            console.log(b);
+            a = 40; 
+
+        }
+        variable();
+        console.log(a);  
+         console.log(b);// b is not defined: the scope of local variables is with in the function only
+        
+    </script>
+</body>
+</html>

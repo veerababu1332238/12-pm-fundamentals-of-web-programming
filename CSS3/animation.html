@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:200px;
+            width:200px;
+            background-color: blue;
+            animation: spin 2s linear infinite;
+            animation-delay: 2s;
+            position: relative;
+            animation-timing-function: ease-in-out;
+
+        }
+        @keyframes spin{
+            0%{
+                background-color: blue;
+                top:0px;
+                left:0px;
+            }
+            25%{
+                background-color:green;
+                top:0px;
+                left: 300px;
+            }
+            50%
+            {
+                background-color:yellow;
+                top:300px;
+                left: 300px;
+
+            }
+            75%{
+                background-color:black;
+                top:300px;
+                left:0px
+            }
+        }
+        .one{
+            height:100px;
+            width:100px;
+            margin-left: 700px;
+            border-radius: 50%;
+            border:3px solid blue;
+            border-bottom-color: transparent;
+            animation-name: round;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+        }
+        @keyframes round{
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+
+    <section class="one">
+
+    </section>
+</body>
+</html>

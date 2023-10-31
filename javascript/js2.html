@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+     <i onclick="like()" class="fa fa-thumbs-o-up" style="font-size:48px;color:blue"></i> &nbsp;
+     <h1 id="counter" style="display: inline">0</h1>
+    <i onclick="dlike()" class="fa fa-thumbs-down"  style="font-size:48px;color:blue"></i> &nbsp;
+
+    <h1 id="count" style="display: inline">0</h1>
+    <script>
+        let counter = 0;
+        let count = 0;
+        function like(){
+            counter++;
+            document.getElementById("counter").innerHTML=counter;
+        }
+        function dlike(){
+            count++;
+            document.getElementById("count").innerHTML=count;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #one{
+            width:200px;
+            height:500px;
+            background-color: grey;
+            transform: translate(-100%,-100%);
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-delay: 1s;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="two" onclick="show()">Show</button>
+    <div Id="one">
+        <ul>
+              <li>About</li>
+              <li>profile</li>
+              <li>Login</li>
+              <li>contact</li>
+
+        </ul>
+       
+    </div>
+    <h1>hello world</h1>
+    <script>
+       isShow = true;
+       function show(){
+        isShow = !isShow;
+        if(isShow){
+            document.getElementById('one').style.transform = 'translate(0%,0%)';
+        }
+        else{
+            document.getElementById('one').style.transform = 'translate(-100%,-100%)';
+        }
+       }
+      
+
+
+    
+
+    </script>
+</body>
+</html>

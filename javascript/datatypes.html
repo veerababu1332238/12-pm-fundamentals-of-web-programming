@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+</head>
+
+
+<body>
+    <input type="text" id="mail" placeholder="maile">
+    <button onclick="next()">Next</button>
+    <script>
+    let a = 10;
+    console.log(typeof a);
+    let b = true;
+    console.log(typeof b);
+    let c = "cat";
+    console.log(typeof c);
+    let d = 4567.89;
+    console.log(d);
+    console.log(typeof d);
+        function next(){
+            let email = document.getElementById("mail").value;
+            email = email.toLowerCase();
+            email = email.trim();
+            if(email.includes('@gmail.com')){
+
+            }
+            else{
+                if(email.includes('@') && email.includes('.')){
+                    
+                }
+                else{
+                    email = email.concat('@gmail.com');
+                }
+            }
+            document.getElementById("mail").value = email;
+        }
+        
+    </script>
+</body>
+
+</html>

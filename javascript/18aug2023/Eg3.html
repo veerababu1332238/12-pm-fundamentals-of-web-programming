@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="username" placeholder="username here"><br><br>
+        <input type="email" id="email" placeholder="email here" > <br><br>
+        <input type="number" id="mobile" placeholder="mobile here"><br><br>
+        <button onclick="addUser()">Submit</button>
+        <ul id="addUsersList" style="list-style-type: none;">
+        
+        
+        </ul>
+        <script>
+       var users=[];
+       function addUser(){
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var mobile = document.getElementById("mobile").value;
+        var user = {
+            username:username,
+            email : email,
+            mobile : mobile
+        }
+        console.log(user);
+        users.push(user);
+        console.log(users);
+        showUsers();
+       }
+      function showUsers() {
+        var addUsersList = document.getElementById("addUsersList");
+        var listItems = "";
+        users.forEach(function(user){
+             listItems += "<li>" + user.username + "&nbsp;&nbsp;&nbsp;" + user.email + "&nbsp;&nbsp;&nbsp;" + user.mobile + "</li>";
+        })
+        addUsersList.innerHTML = listItems;
+      }
+
+        </script>
+             
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Form</title>
+            <link rel="icon" href="./favicon.jpg">
+            <style>
+                h1{
+                    color: #680069;
+                    align-content: center;
+                    background-color: aqua;
+                }
+            </style>
+            
+            
+            
+    </head>
+    <body>
+        <h1 style   align="center">Registration Form</h1>
+        <hr>
+        <form style align="center" action="./index.html"  method="post">
+        <label for ="username">username:</label>
+        <input type="text" name="username" id="username" pattern="[a-zA-Z0-9]+" required><br><br>
+        <label for ="userpassword">password:</label>
+        <input type="password" name="userpassword" id="userpassword"><br><br>
+        <section>
+           <span> what toppings would you like</span><br>
+            <input type="checkbox" id="tomato" name="toppings">
+            <label for="tomato">Tomato</label>
+
+            <input type="checkbox" id="potato" name="toppings">
+            <label for="onion">potato</label>
+
+            <input type="checkbox" id="onion" name="toppings">
+            <label for="onion">onion</label><br><br>
+        </section><br>
+        <section>
+            <span>What is your gender</span><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </section><br><br>
+        <section>
+            <label for="state"> Select your state</label>
+            <select id="state" name="state">
+                <option value="ap">AP</option>
+                <option value="ts">TS</option>
+                <option value="tn">TN</option>
+                <option value="up">UP</option><br>
+            </select>
+        </section><br><br>
+       <section>
+           <label for="city">Select your city</label>
+            <input type="text" list="cities" id="city" name="city">
+           <datalist id="cities">
+                <option value="rajahmundry"></option>
+                <option value="Hyderabad"></option>
+                <option value="chennai"></option>
+                <option value="Lucknow"></option><br>
+           </datalist>
+       </section><br><br>
+       <section>
+        <label for="Address">address</label><br>
+        <textarea id="Address" name="Address" rows="5" cols="30">
+        </textarea>
+       </section><br><br>
+       <input type="submit" value="submit">
+        </form>
+
+
+    </body>
+</html>>

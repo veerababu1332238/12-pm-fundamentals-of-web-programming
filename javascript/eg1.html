@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+        <input type="text" id="email" size="100">
+        <button onclick="next()">Next</button>
+        <script>
+            function next() {
+                 email = document.getElementById("email").value;
+                 console.log(email);
+                 email = email.toLowerCase();
+                 console.log(email);
+                 email = email.trim();
+                 console.log(email);
+                 if(email.includes('@gmail.com')){
+                 }
+                 else{
+                    if(email.includes('@') && email.includes('.')){
+                    }
+                    else{
+                      email =  email.concat('@gmail.com');
+                    }
+                 }
+                 console.log(email);
+                 document.getElementById("email").value = email;
+                 console.log(email);
+                 
+            }
+        </script>
+    </body>
+</html>

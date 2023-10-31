@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var arr = [10,20,3.0,'hi','h'];
+console.log(arr);
+arr.pop();
+console.log(arr);
+arr.shift();
+console.log(arr);
+var index = arr.indexOf(3.0);
+console.log(index);
+arr.splice(index,1);
+console.log(arr);
+arr.unshift(10);
+console.log(arr);
+var index2 = arr.indexOf(20);
+arr.splice(index2+1,0,150);
+console.log(arr);
+        </script>
+    </body>
+</html>

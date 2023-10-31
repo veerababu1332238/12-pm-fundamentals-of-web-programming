@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            form
+        </title>
+        <link rel="icon" type="image" href="./fav.jpg">
+        <STYLE>
+h1{
+    text-align: center;
+    color: rgb(255, 94, 0);
+    margin-top: 50px;
+    
+}
+
+
+        </STYLE>
+
+    </head>
+    <body>
+        <header>
+        <h1>Login Page</h1>
+        </header>
+         <form action="./f.html" method="post">
+            <center>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"  maxlength="15" required  ><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" required maxlength="15" minlength="8"><br><br>
+            <button id="login" onclick="login">Login</button>
+        </center>
+        </form>
+            
+            <script>
+                function login(){
+                    document.getElementById("login").value = login;
+                    alert("login sucess");
+                }
+            </script>
+       </body>
+    </body>
+</html>

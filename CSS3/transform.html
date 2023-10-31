@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+   
+}
+#one{
+    
+    border: 5px solid black;
+    transform: rotate(30deg);
+}
+#two{
+    background-color: aqua;
+    color: blue;
+    margin: 20% auto;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+#two:hover{
+    transform: skew(10deg,20deg);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+
+
+    </div>
+
+    <div id="one">
+  
+         <h1>circle</h1>
+    </div>
+    <button onclick="toggle()" >toggle</button>
+
+    <button id="two">skew</button>
+    <script>
+let isShow = true;
+function toggle(){
+    isShow = !isShow;
+    if(isShow){
+        document.getElementById('nav').style.transform= 'translateX(-100%)';
+    }
+    else{
+        document.getElementById('nav').style.transform= 'translateX(0%)';
+    }
+}
+
+    </script>
+</body>
+</html>

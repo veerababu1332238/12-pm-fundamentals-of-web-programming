@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="emailormobile" size="40" placeholder="enter email or phone number"> <br><br>
+    <input type="text" id="password" placeholder="enter password"> <br><br>
+    <button onclick="login()">Login</button>
+    <script>
+        let a= 10;
+        let b = 20;
+        //arithmetic operators
+        console.log(a+b);
+        console.log(a-b);
+        console.log(a*b);
+        console.log(a/b);
+        console.log(a%b);
+
+        //comparision operators
+        console.log(a>b);
+        console.log(a<b);
+        console.log(a==b);
+        console.log(a!=b);
+        console.log(a>=b);
+        console.log(a<b);
+
+        //logical operators
+      if(a<b && a==10){
+        console.log('a is lessthan b and a is equal')
+      }
+      if(a<b || a==20){
+        console.log('a is lessthan b and a is equal')
+      }
+
+       //ternary operator: shorthand form of if else statement
+       a >= 10 ?console.log("a is two digit positive number"):console.log("a is not two digit positive number");
+       function login() {
+            var emailormobile = document.getElementById("emailormobile").value;
+            var password = document.getElementById("password").value;
+            (emailormobile == "digi@gmail.com" || emailormobile == "7010101010") && password == "digital" ? alert("login success") : alert("login failure");
+        }
+
+
+    </script>
+</body>
+</html>

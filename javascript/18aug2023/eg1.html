@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+    </body>
+    <script>
+        var arr = [10,20,'l',20.5];
+        arr.forEach(function(value) {
+            console.log(value);
+        }
+        )
+        var newArray = arr.filter(function(value){
+            return value;
+        })
+        console.log(newArray);
+        var result = arr.map(function(value){
+            return value*2;
+        })
+        console.log(result);
+    </script>
+</html>

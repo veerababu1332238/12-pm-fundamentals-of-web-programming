@@ -1,0 +1,8 @@
+.one{
+    height:100%;
+    width:20px;
+    position: fixed;
+    top:0px;
+    left: 0%;
+    background-color: grey;
+}

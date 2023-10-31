@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [2,4,"jugg",true,false,'hi',7,8,[1,2,3],true];
+        console.log(arr);
+       console.log( arr[5][0]);
+       console.log(arr[88]);//undefined
+       arr.pop();//removes last value from an array
+       console.log(arr);
+       arr.shift();//removes first value from an array
+       console.log(arr);
+       let index = arr.indexOf(false);
+       console.log(index);
+       arr.splice(index,2,'array');//used to modify the contents of an array by removing the existing elements and/or by adding new elements
+       console.log(arr);
+       arr.unshift(100);//add values at the start
+       console.log(arr);
+       arr.push(200);
+       console.log(arr);//add values at end
+       let index2 = arr.lastIndexOf(true);
+       console.log(index2);
+       arr.splice(index,1);
+       console.log(arr);
+       arr.splice(3,0,true);
+       console.log(arr);
+       var slice = arr.slice(1,4);
+       console.log(slice);
+       console.log(arr.length);
+
+
+
+    </script>
+</body>
+</html>

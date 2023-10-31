@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var data = [100, 200, true, false, true, "hello", [1, 2, 3]];
+        console.log(data);
+        data.pop();
+        console.log(data);
+        data.shift();
+        console.log(data);
+        var index = data.indexOf(false);
+        data.splice(index, 1);
+        data.unshift(100);
+        console.log(data);
+        var index2 = data.lastIndexOf(true);
+        console.log(index2);
+        data.splice(index2, 1);
+        console.log(data);
+        var index3 = data.indexOf(100);
+        data.splice(index3 + 1, 0, 150);
+        console.log(data);
+
+    </script>
+
+</body>
+
+</html>
