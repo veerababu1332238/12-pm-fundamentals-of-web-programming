@@ -1,4 +1,5 @@
-import Picture from './Picture.png'
+import Picture from './Picture.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -39,55 +40,56 @@ import Picture from './Picture.png'
   
   
   return (
-    <div>
+    <div  className='mx-2'>
       <h4>dashboard</h4>
       <h1>ITPS</h1>
       <p>techinfo</p>
       <img src={Picture}/>
 
-    <h3>Dashboard</h3>
+    <h5><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</h5>
     <div className="dropdown">
-      <h3 onClick={toggleDropdown}>Employee</h3>
+      <h5 onClick={toggleDropdown}><i class="fa fa-user" aria-hidden="true"></i>Employee  { isOpen===false?  <i class="fa fa-plus" aria-hidden="true"></i> :<i class="fa fa-minus" aria-hidden="true"></i> }</h5>
       {isOpen && (
         <ul>
-          <li >employee create</li>
-          <li >employee list</li>
+          <li ><Link to="/employee-create" style={{textDecoration:'none'}}>employee create</Link></li>
+          <li ><Link to="/employee-list" style={{textDecoration:'none'}}>employee list</Link></li>
           <li >awards list</li>
         </ul>
       )}
     </div>
     <div className="dropdown">
-    <h3 onClick={toggleDropdown1}>Attendence</h3>
+    <h5 onClick={toggleDropdown1}><i class="fa fa-book" aria-hidden="true"></i>
+Attendence  { isOpen1===false?  <i class="fa fa-plus" aria-hidden="true"></i> :<i class="fa fa-minus" aria-hidden="true"></i> }</h5>
     {isOpen1 && (
       <ul>
-        <li >employee create</li>
-        <li >employee list</li>
-        <li >awards list</li>
+        <li ></li>attendece import
+        <li >manual punching</li>
+        <li >leave application</li>
       </ul>
     )}
   </div>
   <div className="dropdown">
-    <h3 onClick={toggleDropdown2}>payroll</h3>
+    <h5 onClick={toggleDropdown2}><i class="fa fa-inr" aria-hidden="true"></i>payroll { isOpen2===false?  <i class="fa fa-plus" aria-hidden="true"></i> :<i class="fa fa-minus" aria-hidden="true"></i> }</h5>
     {isOpen2 && (
       <ul>
-        <li >employee create</li>
-        <li >employee list</li>
-        <li >awards list</li>
+        <li >pay slip</li>
+        <li >salary setup</li>
+        <li >salary process</li>
       </ul>
     )}
   </div>
   <div className="dropdown">
-    <h3 onClick={toggleDropdown3}>Reports</h3>
+    <h5 onClick={toggleDropdown3}><i class="fa fa-file" aria-hidden="true"></i>Reports  { isOpen3===false?  <i class="fa fa-plus" aria-hidden="true"></i> :<i class="fa fa-minus" aria-hidden="true"></i> }</h5>
     {isOpen3 && (
       <ul>
-        <li >employee create</li>
-        <li >employee list</li>
-        <li >awards list</li>
+        <li >monthly salary </li>
+        <li >yearly salary</li>
+        <li >salary detuction</li>
       </ul>
     )}
   </div>
   <div className="dropdown">
-    <h3 onClick={toggleDropdown4}>job</h3>
+    <h5 onClick={toggleDropdown4}><i class="fa fa-certificate" aria-hidden="true"></i>job  { isOpen4===false?  <i class="fa fa-plus" aria-hidden="true"></i> :<i class="fa fa-minus" aria-hidden="true"></i> }</h5>
     {isOpen4 && (
       <ul>
         <li >employee create</li>

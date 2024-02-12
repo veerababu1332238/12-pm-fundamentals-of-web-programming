@@ -32,3 +32,20 @@ code {
  
 }
 
+ul{
+  list-style-type: none;
+}
+table{
+  margin: 0 auto;
+}
+
+th{
+  background-color: rgb(68, 109, 109);
+  padding:5px 20px;
+  color:whitesmoke
+}
+td {
+  text-align: center;
+  padding: 5px 10px;
+  background-color:whitesmoke;
+}

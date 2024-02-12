@@ -16,10 +16,30 @@ function Contact(){
          console.log(error);
 
       })
+   },[])
+   
+   
+function dataaddbutton () {
+  const empData = {
+    empName: "kohili",
+        empJob: "IT Develoer",
+        empAddress: "Bangloore",
+        empLocation: "Karnataka",
+        empSalary: 250000.0,
+        empContact: 987654318
+   }
+   axios.post('http://localhost:8080/api/v1/saveEmployees',empData).then(response => {
+    console.log(response.data)
+   }).catch(error => {
+    console.log(error);
    })
+}
+
+   
    
    return (
       <div >
+        <button onClick={dataaddbutton}>add data</button>
       <h1 className='text-center'>List of Employees</h1>
       <table>
         <thead>
@@ -50,6 +70,7 @@ function Contact(){
         }
         </tbody>
       </table>
+      
     </div>
 
    

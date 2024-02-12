@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user  = {
+            firstname : "veera ",
+            lastname : "babu",
+            getdetails : function(){
+                return this.firstname+this.lastname;
+            }
+        }
+        var user1  = {
+            firstname : "rajesh ",
+            lastname : "kanna",
+            getdetails : function(){
+                return this.firstname+this.lastname;
+            }
+        }
+        console.log(user.getdetails());
+        console.log(user1.getdetails.call(user1));
+        
+    </script>
+</body>
+</html>

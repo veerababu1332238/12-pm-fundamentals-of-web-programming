@@ -1,23 +1,61 @@
-import {useForm} from 'react-hook-form';
+
 import axios from 'axios';
 import { useState,useEffect } from 'react';
 function ProductsForm(){
-    const{register, handleSubmit, formState:{errors}} = useForm();
-    const ProductDetails = (data) =>{
-            submitForm(data);
+    const [formData,setFormData] = useState({
+        name:'',
+        price:'',
+        category:'',
+        inStock:'',
+        quantity:'',
+        specifications:''
+    })
+    const [imgSrc,setImage] = useState(null);
+
+    const handleImageChange = (e) => {
+        const file = e.target.files[0];
+        if(file) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                    setImage(event.target.result);
+
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    const handleChange = (e) => {
+        const {name,value} = e.target;
+        setFormData((prevdata) => ({
+            ...prevdata,
+            [name]: value,
+        }));
     };
-  function submitForm(formData){
-    var bodyformData= new FormData();
-    bodyformData.append('name', formData.name);
-    axios.post('http://localhost:3001/v1/products',bodyformData).then(response => {
+   const  handleSubmit = (e) =>{
+     e.preventDefault();
 
-    console.log('API Response:', response.data);
-})
-.catch(error => {
+     const formDataToSend = new FormData();
+        formDataToSend.append('name', formData.name);
+        formDataToSend.append('price', formData.price);
+        formDataToSend.append('category', formData.category);
+        formDataToSend.append('inStock', formData.inStock);
+        formDataToSend.append('quantity', formData.quantity);
+        formDataToSend.append('specifications', formData.specifications);
+        formDataToSend.append('image', imgSrc); // Append the image file
+        axios.post('http://localhost:3001/v1/products', formDataToSend)
+        .then(response => {
+            // Handle the response
+            console.log(response.data);
+        })
+        .catch(error => {
+            // Handle errors
+            console.error('Error:', error);
+        });
 
-  console.error('API Error:', error);
-});
-  }
+   }
+
+    
+  
 
    
 return(
@@ -25,48 +63,36 @@ return(
         <div className="row">
             <div className="col-sm-6 mx-auto border my-4 p-4">
                 <h1 className="text-center">ProductData</h1>
-                <form onSubmit={handleSubmit(ProductDetails)} noValidate> 
+                <form onSubmit={handleSubmit} noValidate> 
 
                     <div className='mb-3'>
                         <label for="name">name</label>
-                        <input type="text" class="form-control" id="name" {...register('name',{required:true})} />
-                       
-                       
+                        <input type="text" class="form-control" name="name" value={formData.name} onChange={handleChange}/>
                     </div>
                     <div className='mb-3'>
                         <label for="imageSrc">imageSrc</label>
-                        <input type="file" class="form-control" id="imageSrc" {...register('imageSrc')} />
-                        
-                        
+                        <input type="file" class="form-control" accept='image'name='imgSrc'  onChange={handleImageChange} />
                     </div>
                     <div className='mb-3'>
                         <label for="price">price</label>
-                        <input type="text" class="form-control" id="price" {...register('price',{required:true})} />
-                        
-                       
+                        <input type="text" class="form-control" id="price"  name="price" value={formData.price} onChange={handleChange} />
                     </div>
                     <div className='mb-3'>
                         <label for="category">categeory</label>
-                        <input type="text" class="form-control" id="category" {...register('category',{required:true})} />
-                       
-                       
+                        <input type="text" class="form-control" id="category" name="category" value={formData.category} onChange={handleChange}/>
                     </div>
                     <div className='mb-3'>
                         <label for="inStock">inStock</label>
-                        <input type="text" class="form-control" id="inStock" {...register('inStock',{required:true})} />
-                        
-                       
+                        <input type="text" class="form-control" id="inStock" name='inStock' value={formData.inStock} onChange={handleChange} />
                     </div>
                     <div className='mb-3'>
                         <label for="quantity">quantity</label>
-                        <input type="text" class="form-control" id="quantity" {...register('quantity',{required:true})} />
+                        <input type="text" class="form-control" id="quantity" name='quantity' value={formData.quantity} onChange={handleChange}/>
                       
                     </div>
                     <div className='mb-3'>
                         <label for="specifications">specifications</label>
-                        <input type="text" class="form-control" id="specifications" {...register('specifications',{required:true})} />
-                       
-                       
+                        <input type="text" class="form-control" id="specifications" name='specifications' value={formData.specifications} onChange={handleChange}/>
                     </div>
                    
                     <div className="text-center mb-1">
